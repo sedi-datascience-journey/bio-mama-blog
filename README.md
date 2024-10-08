@@ -1,1 +1,1 @@
-# sedi-datascience-blog
+# Bio Mom in Data Science
