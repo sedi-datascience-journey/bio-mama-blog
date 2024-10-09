@@ -3,8 +3,7 @@ title: Bio Mama
 subtitle: by Sedi
 email: s.fazli21@gmail.com
 description: I am here to start fresh <br /> Strong enough to not give up
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: bio_mama # the base hostname & protocol for your site
+url: https://sedi-datascience-journey.github.io/bio-mama-blog/ # the base hostname & protocol for your site
 author: Sedi
 city: Portland
 state: OR
@@ -21,7 +20,6 @@ tiles-count: 6
 # You need to restart jekyll for changes to have an effect
 socials:
   GitHub: https://github.com/sedi-datascience-journey
-
   GitLab:
   Instagram: https://www.instagram.com/sedi3336/
   LinkedIn: www.linkedin.com/in/sedifazli
@@ -32,9 +30,3 @@ markdown: kramdown
 
 sass:
   style: compressed
-
-exclude:
-- "*.gemspec"
-- LICENSE.md
-- CONTRIBUTING.md
-- README.md 
