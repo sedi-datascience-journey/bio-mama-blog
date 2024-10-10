@@ -1,0 +1,13 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the spacing between images */
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
+  }
+  
