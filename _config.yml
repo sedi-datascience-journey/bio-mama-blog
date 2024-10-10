@@ -1,32 +1,69 @@
-# site settings
-title: Bio Mama
-subtitle: by Sedi
-email: s.fazli21@gmail.com
-description: I am here to start fresh <br /> Strong enough to not give up
-url: https://sedi-datascience-journey.github.io/bio-mama-blog/ # the base hostname & protocol for your site
-author: Sedi
-city: Portland
-state: OR
-country: United States of America
+# Site settings
+title: Bio Mama blog
+description: >- 
+  I am here to start my data analysis journey fresh, strong enough to not give up!
+url: "https://sedi-datascience-journey.github.io/bio-mama-blog/"
+baseurl: "/" # Change this if your blog is in a specific folder (leave as "/" if the repository name is your username.github.io)
 
+# Author settings
+author:
+  name: Sedi
+  bio: "Data analysis lover, mom, and storyteller. This is where I share my journey."
+  avatar: "/assets/images/profile.jpg" # Make sure this image is in your assets folder
+  email: s.fazli21@gmail.com
+  github_username: sedi-datascience-journey
+  instagram: https://www.instagram.com/sedi3336/
+  linkedin: https://www.linkedin.com/in/sedifazli/
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+# Theme settings
+theme: jekyll-theme-minimal # This is a simple theme, you can change it to any Jekyll theme you like
+paginate: 5 # Number of posts per page
 
-# social settings (key must match name of font awesome icon)
-# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
-# Icons are not shown if value is empty
-# You need to restart jekyll for changes to have an effect
-socials:
-  GitHub: https://github.com/sedi-datascience-journey
-  GitLab:
-  Instagram: https://www.instagram.com/sedi3336/
-  LinkedIn: www.linkedin.com/in/sedifazli
-  
-
-# build settings
+# Markdown settings
 markdown: kramdown
+highlighter: rouge
 
-sass:
-  style: compressed
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Social links (optional)
+social_links:
+  github: https://github.com/sedi-datascience-journey
+  instagram: https://www.instagram.com/sedi3336/
+  linkedin: https://www.linkedin.com/in/sedifazli/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Menu (for navigation links in your theme)
+menu:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+  - title: "Posts"
+    url: "/posts"
+  - title: "Gallery"
+    url: "/gallery"
+
+# Posts settings
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Static files for photos (create a 'gallery' page for photo galleries)
+gallery:
+  output: true
+
+# SEO settings (optional but recommended for search engine visibility)
+jekyll_seo_tag:
+  title: "Bio Mama blog"
+  description: "I am here to start my data analysis journey fresh, strong enough to not give up!"
